@@ -55,7 +55,7 @@
 
         <table schema="mybatis" tableName="t_business_unit" domainObjectName="BusinessUnit"
                enableInsert="true" enableSelectByExample="false"
-               enableDeleteByPrimaryKey="false" enableDeleteByExample="false"
+               enableDeleteByPrimaryKey="true" enableDeleteByExample="false"
                enableCountByExample="false" enableUpdateByExample="false"
                enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true"/>
     </context>
