@@ -29,6 +29,12 @@
             <version>5.1.32</version>
             <scope>runtime</scope>
         </dependency>
+        <!--clickHouse依赖        2021年11月12日 升级至此0.3.1版本，修正连接ClickHouse后读取不到字段注释，导致swagger字段文档失败的问题-->
+        <dependency>
+            <groupId>ru.yandex.clickhouse</groupId>
+            <artifactId>clickhouse-jdbc</artifactId>
+            <version>0.3.1</version>
+        </dependency>
 
     </dependencies>
 

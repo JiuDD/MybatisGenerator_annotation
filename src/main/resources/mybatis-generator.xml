@@ -15,10 +15,15 @@
             <property name="suppressDate" value="true"/>
         </commentGenerator>
         <!--数据库连接地址及账号密码-->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://10.112.1.20:3306/kpidb"
                         userId="root"
                         password="123456">
+        </jdbcConnection>-->
+        <jdbcConnection driverClass="ru.yandex.clickhouse.ClickHouseDriver"
+                        connectionURL="jdbc:mysql://10.24.25.204:8123"
+                        userId="default"
+                        password="FqB4Ml6T">
         </jdbcConnection>
 
         <javaTypeResolver >
@@ -53,7 +58,7 @@
         <!--请根据自己数据库对应的表名进行配置修改，这里仅供参考-->
         <!--生成对应表及类名-->
 
-        <table schema="mybatis" tableName="t_business_unit" domainObjectName="BusinessUnit"
+        <table schema="mybatis" tableName="events" domainObjectName="Events"
                enableInsert="true" enableSelectByExample="false"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="false"
                enableCountByExample="false" enableUpdateByExample="false"
